@@ -7,6 +7,7 @@ startup: services
 ingress: true
 ingress_port: 8428
 ingress_entry: /vmui
+panel_icon: mdi:chart-timeline
 hassio_api: true
 # host_network: true
 ports:
