@@ -1,12 +1,14 @@
 name: Victoria Metrics
-version: "1.8.21"
+version: "1.8.22"
 slug: victoria_metrics
 description: Time Series Database for long term storage as replacement for Prometheus and InfluxDB
 webui: "http://[HOST]:[PORT:8428]/"
+startup: services
 ingress: true
 ingress_port: 8428
 ingress_entry: /vmui
 panel_icon: mdi:chart-timeline
+hassio_api: true
 # host_network: true
 ports:
   8428/tcp: 8428
@@ -17,6 +19,7 @@ arch:
   - amd64
 #  - i386
 init: false
+tmpfs: true
 map:
   - share:rw
 options:
